@@ -37,4 +37,16 @@ public class WhenCreatingObjects {
         my_dog.feed();
 
     }
+
+    @Test
+    public void hamster_test(){
+        Hamster hamster = new Hamster("Danny", 4, "Running");
+        System.out.println(hamster.getName());
+        System.out.println(hamster.getAge());
+        System.out.println(hamster.getFavouriteGame());
+        Assert.assertEquals("Danny", hamster.getName());
+        Assert.assertEquals(4, hamster.getAge());
+        Assert.assertEquals("Running", hamster.getFavouriteGame());
+
+    }
 }
