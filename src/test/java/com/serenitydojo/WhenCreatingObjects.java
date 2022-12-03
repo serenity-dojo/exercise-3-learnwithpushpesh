@@ -28,7 +28,13 @@ public class WhenCreatingObjects {
         Assert.assertEquals("Dodo", dodo.getName());
         Assert.assertEquals("Milk", dodo.getFavouriteFood());
         Assert.assertEquals(3, dodo.getAge());
+    }
 
+    @Test
+    public void dog_makes_noise(){
+        Dog my_dog = new Dog();
+        System.out.println(my_dog.makeNoise());
+        my_dog.feed();
 
     }
 }
